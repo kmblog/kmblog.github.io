@@ -73,7 +73,7 @@ $.ajax({
   type: 'get',
   url: 'https://apis.map.qq.com/ws/location/v1/ip',
   data: {
-    key: 'SWPBZ-ZDJEW-T7OR6-3NPO7-GLILH-TBBMQ',  // 这里要写你的KEY!!!
+    key: 'PVOBZ-VP3EW-ALAR2-3KN4F-QMFVT-CZFUN',  // 这里要写你的KEY!!!
     output: 'jsonp',
   },
   dataType: 'jsonp',
@@ -1113,7 +1113,7 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("12/18/2024 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
@@ -3550,3 +3550,14 @@ function toggleWinbox() {
 }
 
 /* 美化模块 end */
+
+if (document.querySelector('#bber-talk')) {
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical', // 垂直切换选项
+    loop: true,
+    autoplay: {
+    delay: 3000,
+    pauseOnMouseEnter: true
+  },
+  });
+}
